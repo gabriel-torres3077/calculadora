@@ -1,0 +1,53 @@
+html, body{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+.title{
+    color:black;
+}
+/* button{
+    padding: 15px, 10px;
+    width: 30px;
+    height: 30px;
+    color:blueviolet;
+    margin-left:1px;
+    margin-bottom: 2px;
+    font-size:10px;
+}
+.especial-button{
+    padding: 15px, 10px;
+    width: 30px;
+    height: 60px;
+    color:blueviolet;
+    margin-left:1px;
+    margin-bottom: 2px;
+    font-size:10px;
+    grid-row-start: 5;
+    grid-row-end: 6;
+} */
+/* Organização dos itens usando GRID */
+.wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: black;
+    padding: 5px;
+    width: 20%;
+    color: blueviolet;
+    margin:auto;
+}
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .equal{
+      grid-row: 4/6;
+      grid-column:4/5;
+  }
+  .zero{
+      grid-column: 1/3;
+  }
+  /* effeito do botão */
+  .grid-item:active{ background-color: rgba(255, 255, 215, 1); }

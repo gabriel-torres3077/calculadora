@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Braba</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">teste 1 teste</h1>
+    </header>
+    <div><!--Primeira linha, tela de exibição-->
+        <input type="text" id="result"/>
+    </div>
+    <div class="wrapper"> <!--Calculadora-->
+
+        <Button class="grid-item" type="button" value="/" onclick="equation('/')"> &divide; </Button>
+        <button class="grid-item" value="*" onclick="equation('*')"> x </button>
+        <button class="grid-item" value="+" onclick="equation('+')"> + </button>
+        <button class="grid-item" value="-" onclick="equation('-')"> - </button>
+        
+        <button class="grid-item" value="7" onclick="equation('7')">7</button>
+        <button class="grid-item" value="8" onclick="equation('8')">8</button>
+        <button class="grid-item" value="9" onclick="equation('9')">9</button>
+        <button class="grid-item" value="c" onclick="clearEquation()"> &#9003; </button>
+
+        <button class="grid-item" value="4" onclick="equation('4')"> 4 </button>
+        <button class="grid-item" value="5" onclick="equation('5')"> 5 </button>
+        <button class="grid-item" value="6" onclick="equation('6')"> 6 </button>
+        <button class="grid-item" value="c" onclick="clr()"> C </button>
+
+        <button class="grid-item" value="1" onclick="equation('1')"> 1 </button>
+        <button class="grid-item" value="2" onclick="equation('2')"> 2 </button>
+        <button class="grid-item" value="3" onclick="equation('3')"> 3 </button>
+        <button class="grid-item equal" type="button" value="=" onclick="solve()"> = </button>
+
+        <button class="grid-item zero" value="0" onclick="equation('0') "> 0 </button>
+        <button class="grid-item" value="." onclick="equation('.')"> &middot; </button>
+    </div>
+    
+</body>
+</html>/
+
